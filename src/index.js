@@ -29,6 +29,7 @@ ReactDOM.render(
         <Route exact path='/' component={App} />
         <Route exact path="/games" component={GamesPage} />
         <Route exact path="/games/new" component={GameFrom} />
+        <Route exact path='/game/:_id' component={GameFrom} />
       </div>
     </Router>
   </Provider>,

@@ -1,5 +1,6 @@
 import React from 'react'
 import PropTypes from 'prop-types'
+import GameCard from './GameCard'
 
 const GamesList = ({ games }) => {
   const emptyMessage = (
@@ -7,7 +8,9 @@ const GamesList = ({ games }) => {
   )
 
   const gamesList = (
-    <p>games list</p>
+    <div className="ui four cards">
+      {games.map(game => <GameCard game={game} key={game._id} />)}
+    </div>
   )
 
   return (
